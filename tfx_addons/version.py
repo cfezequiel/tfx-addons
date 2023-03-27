@@ -16,7 +16,7 @@
 
 # We follow Semantic Versioning (https://semver.org/)
 _MAJOR_VERSION = "0"
-_MINOR_VERSION = "6"
+_MINOR_VERSION = "7"
 _PATCH_VERSION = "0"
 
 # When building releases, we can update this value on the release branch to
@@ -77,5 +77,6 @@ _PKG_METADATA = {
     "firebase_publisher":
     [f"tfx{_TFXVERSION_CONSTRAINT}", "firebase-admin>=5.0.0,<6.0.0"],
     "huggingface_pusher":
-    [f"tfx{_TFXVERSION_CONSTRAINT}", "huggingface-hub>=0.10.0,<1.0.0"]
+    [f"tfx{_TFXVERSION_CONSTRAINT}", "huggingface-hub>=0.10.0,<1.0.0"],
+    "predictions_to_bigquery": [f"tfx{_TFXVERSION_CONSTRAINT}"],
 }
